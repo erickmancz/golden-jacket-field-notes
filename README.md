@@ -1,85 +1,56 @@
-# AWS Agentic Stack Starter
+# Golden Jacket Field Notes
 
-Companion repository for **Week 2** of [Golden Jacket Field Notes](https://github.com/erickmancz/golden-jacket-field-notes): *"The AWS Agentic Stack Explained: Strands, AgentCore, MCP, and A2A — A Practitioner's Map."*
+Companion repository for **Golden Jacket Field Notes**, a weekly practitioner series on production ML, GenAI, and cloud architecture on AWS.
 
-**Read the article:** [on Medium](https://awstip.com/the-aws-agentic-stack-explained-strands-agentcore-mcp-and-a2a-a-practitioners-map-4ef995a2e5b4)
+Articles are published on [Medium](https://medium.com/@erickmancz) and selectively republished on the [AWS Builder Center](https://builder.aws.com/profiles/imancz). This repository indexes every week, with links to the article, the LinkedIn cross-post, and the companion code when one exists.
 
----
-
-## What this repository is
-
-A hands-on starter that demonstrates each of the four layers of the AWS agentic stack in isolation, so you can understand what each one does before composing them in a production workload.
-
-| Module | What it demonstrates |
-|--------|----------------------|
-| [`strands-hello-world/`](./strands-hello-world) | A minimal Strands agent that uses Amazon Bedrock as its model provider and exposes one tool |
-| [`agentcore-deploy/`](./agentcore-deploy) | Reference Terraform for deploying an agent runtime to AgentCore, including IAM, networking, and observability baseline |
-| [`mcp-server-sample/`](./mcp-server-sample) | A minimal MCP server written in Python that exposes two resources and one tool, consumable by any MCP-compatible client |
-| [`a2a-exchange/`](./a2a-exchange) | Two agents exchanging structured messages through the A2A protocol, demonstrating discovery, handshake, and delegation |
-
-## What this repository is NOT
-
-- **Not production-ready.** Each module is a reference implementation focused on clarity, not hardening. Security, cost controls, rate limiting, and retry policies are deliberately minimal.
-- **Not a replacement for the AWS documentation.** Every module links back to the official docs. If AWS changes an API, the documentation is authoritative, not this repo.
-- **Not a framework.** Do not import from this repo. Read the code, adapt the patterns, write your own.
-
-> **Version note:** SDK versions move fast in this space. Every module includes `REQUIREMENTS.md` with the exact versions tested. If you encounter API drift, open an issue with your SDK version and the error — I will update.
+> Not every article gets a companion repository. I only publish code I have actually run and can defend in issues. Where an article is primarily architectural analysis or commentary on AWS services, the "companion code" column is intentionally empty.
 
 ---
 
-## Prerequisites
+## The series so far (new article every week!)
 
-- AWS account with access to Amazon Bedrock in a supported region (tested in `us-east-1`)
-- Bedrock model access granted for Anthropic Claude models (request it in the Bedrock console if needed)
-- Python 3.11+
-- Terraform 1.7+ (only for the `agentcore-deploy` module)
-- AWS CLI configured with credentials that have permissions to invoke Bedrock and deploy infrastructure
+| Week | Topic | Article | Companion code |
+|------|-------|---------|----------------|
+| 01 | Bedrock Knowledge Bases in production — what the docs don't tell you | [Medium](https://awstip.com/bedrock-knowledge-bases-looked-perfect-in-my-demo-production-had-other-plans-19a0f129db45) | *(planned)* |
+| 02 | The AWS Agentic Stack Explained: Strands, AgentCore, MCP, and A2A | [Medium](https://awstip.com/the-aws-agentic-stack-explained-strands-agentcore-mcp-and-a2a-a-practitioners-map-4ef995a2e5b4) | [→ aws-agentic-stack-starter](https://github.com/erickmancz/aws-agentic-stack-starter) |
+| 03 | Architecting Payment Authorization on AWS: Credit Cards vs. Pix at Scale | [Medium](https://awstip.com/architecting-payment-authorization-on-aws-credit-cards-vs-pix-at-scale-181d3129f829) | — *(architectural analysis only)* |
+| 04 | I Connected Five MCP Servers to My IDE. My AI Agent Got Dumber. | [Medium](https://awstip.com/i-connected-five-mcp-servers-to-my-ide-my-ai-agent-got-dumber-92c2e658f487) | *(planned)* |
+| 05 | AWS Frontier Agents Dissected: Security Agent and DevOps Agent Under the Hood | [Medium](https://awstip.com/aws-frontier-agents-dissected-what-security-agent-and-devops-agent-actually-do-under-the-hood-e97b49feabb6) · [Builder Center](https://builder.aws.com/profiles/imancz) | — *(services analysis, no hands-on repo)* |
 
----
-
-## Getting started
-
-Clone the repo and pick the module you want to explore first:
-
-```bash
-git clone https://github.com/erickmancz/aws-agentic-stack-starter.git
-cd aws-agentic-stack-starter
-```
-
-If this is your first time with the agentic stack, I recommend reading the modules in this order:
-
-1. `strands-hello-world/` — understand what a tool-using agent is
-2. `mcp-server-sample/` — understand how external context reaches an agent
-3. `agentcore-deploy/` — understand how the agent runs at scale
-4. `a2a-exchange/` — understand how agents talk to each other
-
-Each module has its own README with setup, run, and teardown instructions.
+*Bonus editions and deeper guides are listed in [bonus-editions.md](./bonus-editions.md) when published.*
 
 ---
 
-## Architecture overview
+## How to read the series
 
-The four pieces answer four different questions:
+**Each article follows the same structure:**
 
-| Question | Answer |
-|----------|--------|
-| How does the agent reason and use tools? | **Strands** |
-| How does the agent get external context at runtime? | **MCP (Model Context Protocol)** |
-| Where does the agent run in production? | **AgentCore** |
-| How does the agent collaborate with other agents? | **A2A (Agent-to-Agent)** |
+1. A real problem encountered in production
+2. Why it matters beyond the specific case
+3. Technical deep dive
+4. What the official documentation does not tell you
+5. Takeaway
 
-For the full map with when to use each, read the [article](https://awstip.com/the-aws-agentic-stack-explained-strands-agentcore-mcp-and-a2a-a-practitioners-map-4ef995a2e5b4).
+**Target audience:** practitioners shipping AWS workloads into regulated or high-stakes environments, not people writing first tutorials.
+
+---
+
+## About the author
+
+I am an AWS Solutions Architect with almost 15 years in cloud, focused on production ML and GenAI workloads for regulated organizations. I hold every active AWS certification, including the Generative AI Developer Professional as an Early Adopter — the status AWS calls Golden Jacket. I am the sixth Brazilian Golden Jacket holder and co-founder of Golden Jackets Brazil.
+
+- Medium: [medium.com/@erickmancz](https://medium.com/@erickmancz)
+- LinkedIn: [linkedin.com/in/erick-mancz](https://linkedin.com/in/erick-mancz)
+- AWS Builder Center: [builder.aws.com/profiles/imancz](https://builder.aws.com/profiles/imancz)
+- Credly: [credly.com/users/erick-mancz.66783c3e](https://www.credly.com/users/erick-mancz.66783c3e)
 
 ---
 
 ## License
 
-MIT. See [LICENSE](./LICENSE). Opinions expressed here are my own.
+The companion code in linked repositories is licensed under [MIT](./LICENSE), unless otherwise stated in the individual repo. Articles and written content remain under the respective publisher's terms (Medium, AWS Builder Center).
 
 ---
 
-## Feedback
-
-If something is broken, outdated, or unclear, open an issue. Pull requests welcome, especially when an AWS SDK update breaks a pattern here. This repo evolves with the stack.
-
-**Author:** [Erick Mancz](https://linkedin.com/in/erick-mancz) · AWS Golden Jacket · [Medium](https://medium.com/@erickmancz) · [AWS Builder Center](https://builder.aws.com/profiles/imancz)
+<sub>Opinions expressed in articles and code are my own and do not represent the views of my employer or any affiliated organization.</sub>
