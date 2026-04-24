@@ -17,6 +17,7 @@ Articles are published on [Medium](https://medium.com/@erickmancz) and selective
 | 03 | Architecting Payment Authorization on AWS: Credit Cards vs. Pix at Scale | [Medium](https://awstip.com/architecting-payment-authorization-on-aws-credit-cards-vs-pix-at-scale-181d3129f829) | — *(architectural analysis only)* |
 | 04 | I Connected Five MCP Servers to My IDE. My AI Agent Got Dumber. | [Medium](https://awstip.com/i-connected-five-mcp-servers-to-my-ide-my-ai-agent-got-dumber-92c2e658f487) | *(planned)* |
 | 05 | AWS Frontier Agents Dissected: Security Agent and DevOps Agent Under the Hood | [Medium](https://awstip.com/aws-frontier-agents-dissected-what-security-agent-and-devops-agent-actually-do-under-the-hood-e97b49feabb6) · [Builder Center](https://builder.aws.com/profiles/imancz) | — *(services analysis, no hands-on repo)* |
+| 06 | Deterministic-First: GenAI Governance That Does Not Hallucinate | [Medium]([link](https://medium.com/aws-tip/deterministic-first-genai-governance-that-does-not-hallucinate-82190d44805d) | *(planned)* |
 
 *Bonus editions and deeper guides are listed in [bonus-editions.md](./bonus-editions.md) when published.*
 
