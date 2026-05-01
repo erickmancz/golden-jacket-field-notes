@@ -12,7 +12,7 @@ Articles are published on [Medium](https://medium.com/@erickmancz) and selective
 
 | Week | Topic | Article | Companion code |
 |------|-------|---------|----------------|
-| 01 | Bedrock Knowledge Bases in production — what the docs don't tell you | [Medium](https://awstip.com/bedrock-knowledge-bases-looked-perfect-in-my-demo-production-had-other-plans-19a0f129db45) | *(planned)* |
+| 01 | Bedrock Knowledge Bases in production — what the docs don't tell you | [Medium](https://awstip.com/bedrock-knowledge-bases-looked-perfect-in-my-demo-production-had-other-plans-19a0f129db45) | [→ bedrock-kb-production-starter](https://github.com/erickmancz/bedrock-kb-production-starter) |
 | 02 | The AWS Agentic Stack Explained: Strands, AgentCore, MCP, and A2A | [Medium](https://awstip.com/the-aws-agentic-stack-explained-strands-agentcore-mcp-and-a2a-a-practitioners-map-4ef995a2e5b4) | [→ aws-agentic-stack-starter](https://github.com/erickmancz/aws-agentic-stack-starter) |
 | 03 | Architecting Payment Authorization on AWS: Credit Cards vs. Pix at Scale | [Medium](https://awstip.com/architecting-payment-authorization-on-aws-credit-cards-vs-pix-at-scale-181d3129f829) | — *(architectural analysis only)* |
 | 04 | I Connected Five MCP Servers to My IDE. My AI Agent Got Dumber. | [Medium](https://awstip.com/i-connected-five-mcp-servers-to-my-ide-my-ai-agent-got-dumber-92c2e658f487) | *(planned)* |
