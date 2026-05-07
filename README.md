@@ -20,6 +20,7 @@ Articles are published on [Medium](https://medium.com/@erickmancz) and selective
 | 06 | S3 Files: What 20 Years of “You Can’t Mount S3” Looks Like When It Finally Ships | [Medium](https://medium.com/aws-tip/s3-files-what-20-years-of-you-cant-mount-s3-looks-like-when-it-finally-ships-90e6e01792ea) · [Builder Center](https://builder.aws.com/profiles/imancz) | — *(services analysis and hands-on but no code)* |
 | 07 | Deterministic-First: GenAI Governance That Does Not Hallucinate | [Medium](https://medium.com/aws-tip/deterministic-first-genai-governance-that-does-not-hallucinate-82190d44805d) · [Builder Center](https://builder.aws.com/profiles/imancz) | *(planned)* |
 | 08 | The AWS Generative AI Professional Exam: What the Blueprint Doesn’t Reveal | [Medium](https://medium.com/aws-tip/the-aws-generative-ai-professional-exam-what-the-blueprint-doesnt-reveal-66b09500af96) | — *(analysis only)* |
+| 09 | Hosting an MCP Server on AWS in 2026: Four Paths and How to Choose | [Medium](https://medium.com/aws-tip/hosting-an-mcp-server-on-aws-in-2026-four-paths-and-how-to-choose-f3510ae378b8) | — *(analysis only)* |
 
 *Bonus editions and deeper guides are listed in [bonus-editions.md](./bonus-editions.md) when published.*
 
